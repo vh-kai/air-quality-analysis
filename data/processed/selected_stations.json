@@ -1,0 +1,22 @@
+[
+  {
+    "station_id": "952",
+    "group": "industry"
+  },
+  {
+    "station_id": "680",
+    "group": "rural_background"
+  },
+  {
+    "station_id": "158",
+    "group": "suburban_background"
+  },
+  {
+    "station_id": "1438",
+    "group": "urban_background"
+  },
+  {
+    "station_id": "172",
+    "group": "urban_traffic"
+  }
+]

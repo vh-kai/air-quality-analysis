@@ -1,0 +1,74 @@
+Table airquality_2025 {
+  station_id int
+  timestamp text
+  component_id int
+  value int
+  component_name text
+  group text
+}
+
+Table components {
+  component_id int [primary key]
+  component_code text
+  component_symbol text
+  component_unit text
+  component_name text
+}
+
+Table stations {
+  station_id int [primary key]
+  station_code text
+  station_name text
+  station_city text
+  station_synonym text
+  station_active_from text
+  station_active_to text
+  station_longitude real
+  station_latitude real
+  network_id int
+  station_setting_id int
+  station_type_id int
+  network_code text
+  network_name text
+  station_setting_name text
+  station_setting_short_name text
+  station_type_name text
+  station_street text
+  station_street_nr text
+  station_zip_code int
+  group text
+}
+
+Table vw_annual_mean_values {
+  year int
+  "station id" int
+  "station name" text
+  "component name" text
+  "mean value" real
+  unit text 
+}
+
+Table vw_monthly_mean_values {
+  "year-month" text
+  "station id" int
+  "station name" text
+  "component name" text
+  "mean value" real
+  unit text 
+}
+
+Table vw_number_of_monthly_values {
+  "year-month" text
+  station_id int
+  "component name" text
+  "number of values" int
+}
+
+Ref: components.component_id < airquality_2025.component_id
+Ref: stations.station_id < airquality_2025.station_id
+Ref: components.component_code < vw_monthly_mean_values."component name"
+Ref: stations.station_id < vw_monthly_mean_values."station id"
+Ref: components.component_code < vw_number_of_monthly_values."component name"
+Ref: stations.station_id < vw_number_of_monthly_values.station_id
+Ref: components.component_code < vw_annual_mean_values."component name"
+Ref: stations.station_id < vw_annual_mean_values."station id"

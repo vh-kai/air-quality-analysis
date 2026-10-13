@@ -1,0 +1,6 @@
+station id,station code,station name,station city,station synonym,station active from,station active to,station longitude,station latitude,network id,station setting id,station type id,network code,network name,station setting name,station setting short name,station type name,station street,station street nr,station zip code,group
+172,DEBE065,Berlin Frankfurter Allee,Berlin,,1993-09-01,,13.4699,52.5141,3,1,3,BE,Berlin,urban area,urban,traffic,Frankfurter Allee,86b,10247,urban_traffic
+1438,DERP001,Ludwigshafen-Oppau,Ludwigshafen,,1978-01-01,,8.4023,49.5150,11,1,1,RP,Rhineland-Palatinate,urban area,urban,background,Horst-Schork-Str./Windhorststr.,,67069,urban_background
+158,DEBE051,Berlin Buch,Berlin,MC077,2017-07-24,,13.4831,52.6442,3,2,1,BE,Berlin,suburban area,suburban,background,Hobrechtsfelder Chaussee,110-113,13125,suburban_background
+952,DENI070,Salzgitter-Drütte,Salzgitter,,2007-08-16,,10.4559,52.1537,9,3,2,NI,Lower Saxony,rural area,rural,industry,Drütter Str.,75,38239,industry
+680,DEHE052,Kleiner Feldberg,Glashütten,,1992-03-12,,8.4461,50.2219,7,3,1,HE,Hesse,rural area,rural,background,Feldweg,,61479,rural_background
